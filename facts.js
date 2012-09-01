@@ -29,6 +29,7 @@ function startDoingThings()
 function startQuery()
 {
 	theGoodBits = [];
+	thisOne = 0;
 	var query = $('#query').val();
 
 	var url="http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20answers.search%20where%20query%3D%22" +
