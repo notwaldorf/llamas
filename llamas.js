@@ -5,12 +5,12 @@ var thisOne = 0;
 function startDoingThings()
 {
 	$('#next').click(function(){
-						haveAFact();
 						thisOne = thisOne === theGoodBits.length-1 ? 0 : thisOne+1
+						haveAFact();
 						});
 	$('#prev').click(function(){
-						haveAFact();
 						thisOne = thisOne === 0 ? theGoodBits.length -1 : thisOne-1
+						haveAFact();
 						});
 
 	immediateViewing(); // while the people are waiting.
