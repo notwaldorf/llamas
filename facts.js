@@ -28,6 +28,9 @@ function startDoingThings()
 
 function startQuery()
 {
+	$('#the-why').text("Wait for it...");
+	$('#the-what').text("");
+	$('#the-how').text("");
 	theGoodBits = [];
 	thisOne = 0;
 	var query = $('#query').val();
