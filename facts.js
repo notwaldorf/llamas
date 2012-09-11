@@ -1,7 +1,8 @@
 // whatsup globals?
 var theGoodBits = [];
 var thisOne = 0;
-
+var defaultDescription = "But what is it???";
+var defaultAnswer = "The internet doesn't know.";
 function startDoingThings()
 {
 	$('#go').click(startQuery);
@@ -50,8 +51,8 @@ function parseTheGoodBits(data, query){
 	{
 		theGoodBits.push({});
 		theGoodBits[0].subject = query;
-		theGoodBits[0].content = "But what is it???";
-		theGoodBits[0].answer = "The internet doesn't know.";	
+		theGoodBits[0].content = defaultDescription;
+		theGoodBits[0].answer = defaultAnswer;	
 		return;
 	}
 
@@ -60,8 +61,8 @@ function parseTheGoodBits(data, query){
 	{
 		theGoodBits.push({});
 		theGoodBits[i].subject = questions[i].Subject;
-		theGoodBits[i].content = questions[i].Content;
-		theGoodBits[i].answer = questions[i].ChosenAnswer;	
+		theGoodBits[i].content = questions[i].Content || defaultDescription;
+		theGoodBits[i].answer = questions[i].ChosenAnswer || defaultAnswer;	
 	}
 }
 
