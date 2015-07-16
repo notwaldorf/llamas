@@ -1,4 +1,4 @@
-👉 This project is sadly deprecated, because Yahoo! killed their questions API. This is why we can't have nice things.
+👉 This project is sadly deprecated, because Yahoo! killed their Answers API. This is why we can't have nice things.
 
 Box O'Facts
 ======
